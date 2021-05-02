@@ -6,6 +6,13 @@ let isVaild = true;
 //This map is used to turn a digit to a word
 const numbersMap = ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"];
 
+//if statment to check numbers are being entered.
+if (numbers.length == 0) {
+
+    console.log('Please enter in some vaild numbers');
+    return;
+}
+
 //Let's get one number at a time by looping
 numbers.forEach(function(number) {
     //Checking to see if its a real number
@@ -31,7 +38,6 @@ numbers.forEach(function(number) {
         return;
     }
 });
-
 
 //Only if output is vaild
 if(isVaild){
